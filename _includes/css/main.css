@@ -7,6 +7,22 @@
 body {
     overflow-x: hidden;
 }
+#about{
+  background-color: #2a4b62;
+}
+button.btn.btn-success.btn-lg {
+    border-color: #{{site.color.secondary}};
+    background-color: #{{site.color.secondary}};
+
+}
+#contact div div div hr,
+#contact div div div h2{
+  color: white;
+}
+
+div.portfolio-item a h4{
+  color: #{{site.color.secondary}};
+}
 
 p {
     font-size: 20px;
@@ -16,13 +32,16 @@ p.small {
     font-size: 16px;
 }
 
-a,
+a.btn-social.btn-outline {
+  border-color: #{{ site.color.secondary}};
+  color: #{{ site.color.secondary}};
+}
 a:hover,
 a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.secondary-dark }};
 }
 
 h1,
@@ -35,6 +54,9 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+hr.star-light {
+    border-color: #ffffff;
+}
 
 hr.star-light,
 hr.star-primary {
@@ -45,10 +67,18 @@ hr.star-primary {
     border-top: solid 5px;
     text-align: center;
 }
+hr.star#dark{
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-size: 2em;
+  color: #2a4b62;
+}
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    /*content: "\f005";*/
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -57,9 +87,7 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
-    border-color: #fff;
-}
+
 
 hr.star-light:after {
     color: #fff;
@@ -67,12 +95,12 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #{{ site.color.secondary }};
+    background-color: #{{ site.color.secondary }};
 }
 
 hr.star-primary:after {
-    color: #{{ site.color.secondary }};
     background-color: #fff;
+    color: #{{ site.color.secondary }};
 }
 
 .img-centered {
@@ -81,8 +109,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #{{ site.color.primary }};
+    color: #{{site.color.secondary}};
+    background-color: #{{ site.color.primary }};
 }
 
 header .container {
@@ -193,6 +221,9 @@ section.success {
         padding-top: 75px;
     }
 }
+#portfolio {
+ background-color: #{{site.color.primary}}
+}
 
 #portfolio .portfolio-item {
     right: 0;
@@ -253,20 +284,21 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px ;
     font-size: 20px;
-    color: #fff;
+    color: #{{site.color.secondary}};
     background: 0 0;
     transition: all .3s ease-in-out;
 }
 
-.btn-outline:hover,
+
+.btn-outline:,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #{{ site.color.primary }};
-    background: #fff;
+    border: solid 2px #{{site.color.secondary-dark}};
+    color: #{{site.color.secondary}};
+    background-color: #{{site.color.secondary-dark}};
 }
 
 .floating-label-form-group {
@@ -335,6 +367,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
+    color: #{{site.color.secondary}};
     background-color: #{{ site.color.primary }};
 }
 
@@ -344,7 +377,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #515151;
+    background-color: #{{ site.color.secondary }};
 }
 
 .btn-social {
@@ -419,7 +452,7 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.portfolio-modal .close-modal: {
     opacity: .3;
 }
 
@@ -428,7 +461,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #{{ site.color.primary }};
+    background-color: #{{ site.color.secondary }};
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -438,14 +471,14 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #{{ site.color.primary}};
+    background-color: #{{ site.color.secondary }};
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .navbar-nav>.active>a {
-    background-color: #515151 !important;
+    background-color: #{{ site.color.secondary-dark }} !important;
 }
 
 /* Fix modal mouse wheel issues */
@@ -454,12 +487,6 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
-
 #contact{
-  background-color: #{{ site.color.secondary}}
-}
-
-#contact div h2 {
-  color: #fff;
-
+  background-color:#2a4b62;
 }
