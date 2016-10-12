@@ -456,7 +456,7 @@ footer .footer-below {
 }
 
 #contact{
-  background-color: #{{ site.color.primary}}
+  background-color: #{{ site.color.secondary}}
 }
 
 #contact div h2 {
