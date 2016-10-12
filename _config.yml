@@ -24,7 +24,7 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF 
+  primary: 18bc9c #80B3FF
   primary-rgb: "24,288,156" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
@@ -40,10 +40,8 @@ footer:
 social:
   - title: linkedin
     url: http://twitter.com/pjwickwire
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: blog
+    url: http://rubydoobiedoo.wordpress.com
   - title: bitbucket
     url: http://bitbucket.org/pajamaw
   - title: github
