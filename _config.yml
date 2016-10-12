@@ -1,10 +1,10 @@
 # Site settings
 title: Freelancer
-email: your-email@domain.com
+email: pjpeterww@gmail.com
 url: https://example.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+meta_author: Wickwire PJ
 
 # Google webmaster tools
 google_verify:
@@ -31,31 +31,31 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
+  copyright: PJ Wickwire
+  location: New York, NY
+  social: Find Me Online
+  #credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
+  - title: linkedin
+    url: http://twitter.com/pjwickwire
   - title: facebook
     url:
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
   - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: http://bitbucket.org/pajamaw
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/pajamaw
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 19 S Williams
+  - line: New York, NY 10004
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+#credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
