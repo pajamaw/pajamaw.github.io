@@ -344,7 +344,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #{{ site.color.secondary-dark }};
+    background-color: #515151;
 }
 
 .btn-social {
@@ -445,7 +445,7 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.secondary-dark }} !important;
+    background-color: #515151 !important;
 }
 
 /* Fix modal mouse wheel issues */
