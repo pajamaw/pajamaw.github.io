@@ -53,9 +53,14 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+
 }
 hr.star-light {
     border-color: #ffffff;
+}
+.project,
+#project{
+  color: #2b4b61;
 }
 
 hr.star-light,
