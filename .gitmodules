@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"]
+  path = /projects/nautical-flights/nautical.html
+  url = git://pajamaw.github.io/projects/nautical-flights/nautical.html
