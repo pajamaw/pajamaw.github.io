@@ -19,6 +19,7 @@ button.btn.btn-success.btn-lg {
 #contact div div div hr,
 #contact div div div h2,
 input,
+input.form-control,
 textarea.form-control,
 p.help-block {
   color: white;
