@@ -15,8 +15,12 @@ button.btn.btn-success.btn-lg {
     background-color: #{{site.color.secondary}};
 
 }
+
 #contact div div div hr,
-#contact div div div h2{
+#contact div div div h2,
+input.form-control,
+textarea.form-control,
+p.help-block {
   color: white;
 }
 
