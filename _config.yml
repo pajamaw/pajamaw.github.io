@@ -39,9 +39,7 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: linkedin
-    url: http://linkedin.com/pjwickwire
-  - title: bitbucket
-    url: http://bitbucket.org/pajamaw
+    url: http://linkedin.com/in/pjwickwire
   - title: instagram
     url: http://instagram.com/pajamaw
   - title: github
