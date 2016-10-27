@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Why Hire PJ?</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" id="tt-easy-google-fonts-css" href="https://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C300&amp;subset=latin%2Call&amp;ver=4.5.2" type="text/css" media="all">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css"><!--Used for the autocomplete js -->
+        <link rel="stylesheet" href="style.css"> <!--Used for the basic UI -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+
+    </head>
+    <body>
+      <nav class="navbar reset">
+        <h1 >
+          <a class="navbar brand" href="#"></a>
+          <small>Recruitment</small>
+        </h1>
+      </nav>
+
+
+
+      <form id="recruitform">
+
+      	<ul id="progressbar">
+      		<li class="active">Company Information</li>
+      		<li>Role Information</li>
+      		<li>Desired Qualifications</li>
+          <li>Requirements</li>
+          <li>Results</li>
+      	</ul>
+
+      	<fieldset>
+      		<h2 class="fs-title">Company Information</h2>
+          <br>
+      		<input type="text" name="cname" placeholder="Company Name" value="Uphired"/>
+      		<input type="text" name="industry" placeholder="Industry" value="Tech-Recruitment"/>
+      		<input type="text" name="size" placeholder="Size" value="1-10"/>
+          <input type="text" name="location" placeholder="Location" value="New York, NY"/>
+
+      		<input type="button" name="next" class="next action-button" value="Next" />
+      	</fieldset>
+      	<fieldset>
+      		<h2 class="fs-title">Role Information</h2>
+          <br>
+          <input type="text" name="role-title" placeholder="Title" value="Web Developer"/>
+          <input type="text" name="role-level" placeholder="Level" value="Intern"/>
+      		<textarea type="text" name="role-functions" placeholder="Functions" ></textarea>
+      		<input type="text" name="role-pay" placeholder="$" />
+
+        	<input type="button" name="previous" class="previous action-button" value="Previous" />
+      		<input type="button" name="next" class="next action-button" value="Next" />
+      	</fieldset>
+      	<fieldset>
+      		<h2 class="fs-title">Desired Candidate</h2>
+      		<h3 class="fs-subtitle">(optional) </h3>
+      		<input type="text" name="q-years" placeholder="Years of Experience" />
+      		<input type="text" name="Skills" placeholder="Skills" />
+      		<input type="text" name="Education" placeholder="Education" />
+          <input type="text" name="Characteristics" placeholder="Characteristics" />
+
+        	<input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="button" name="next" class="next action-button" value="Next" />
+      	</fieldset>
+        <fieldset class="penultimate">
+          <h2 class="fs-title">Requirements</h2>
+          <h3 class="fs-subtitle">Absolute bare minimums</h3>
+          <input type="text" name="q-years" placeholder="Years of Experience"/>
+      		<textarea type="text" name="Skills" placeholder="Skills"></textarea>
+      		<textarea type="text" name="Education" placeholder="Education"></textarea>
+
+          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="button" name="next" class="next action-button" value="Submit" />
+        </fieldset>
+
+        <fieldset>
+          <h2 class="fs-title">Results</h2>
+          <h3 class="fs-subtitle">Your Ideal Candidate</h3>
+          <div "results">
+            <table>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><a href="http://pajamaw.github.io"><img src="images/profile.png" height="42px" width="42px"/></td>
+                    <td><a href="http://pajamaw.github.io"><h4>PJ Wickwire</h4></td>
+                    <td id="far"><h4>Match: 100%</h4></td>
+                  </tr></a>
+                </tbody>
+              </table>
+          </div>
+        </fieldset>
+        <div class="loading">
+          <img src="https://s3.amazonaws.com/wp-blog-content/wp-content/uploads/2016/06/07180731/upsider_arrow_greenbg.png" height="200px" width="200px"/>
+        </div>
+      </form>
+
+      <script src="index.js"></script><!--Main js file -->
+
+    </body>
+</html>
