@@ -24,18 +24,24 @@ $(".next").click(function(){
 
 	current_fs = $(this).parent();
 	next_fs = $(this).parent().next();
-  final_fs = $(this).parent().next().next();
 
-$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-  if(current_fs[0] === $('#recruitform fieldset')[fs_length -2]){
-    current_fs.hide();
-    $('.loading img').css('display', 'block');
-    console.log('before timeouts')
-    setTimeout(function(){
-      console.log('timeout')
-      next_fs.show();
-      $('.loading').hide()
-    }, 3000)
+  $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+    if(current_fs[0] === $('#recruitform fieldset')[fs_length -2]){
+
+      current_fs.hide();
+
+      $('.loading img').show();
+      $('.loading img').css('display', 'block');
+
+      console.log('before timeouts')
+
+      setTimeout(function(){
+        console.log('timeout')
+        next_fs.show();
+        $('.loading').hide()
+      }, 3000)
+
   }else{
     next_fs.show();
     current_fs.hide()
