@@ -38,6 +38,8 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: email
+    url: mailto:pjpeterww@gmail.com
   - title: linkedin
     url: http://linkedin.com/in/pjwickwire
   - title: instagram
