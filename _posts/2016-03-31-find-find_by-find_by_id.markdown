@@ -41,7 +41,7 @@ Where as if you use find_by or find_by_id an exception error will occur if the p
 
 
 
-This is important because if you're buidling an application and you want to raise an exception error, you would use the find_by method, where as if you had setup your applcation to respond to a .nil? you would consider using the .find method.
+This is important because if you're building an application and you want to raise an exception error, you would use the find_by method, where as if you had setup your application to respond to a .nil? you would consider using the .find method.
 
 
 

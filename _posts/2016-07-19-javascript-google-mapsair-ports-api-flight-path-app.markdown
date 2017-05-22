@@ -27,10 +27,10 @@ To do this I needed a couple things:
 
 
 
-	
+
   1. A Maps API
 
-	
+
   2. An Airports Database
 
 
@@ -92,7 +92,7 @@ Now that we have a "Get out of jail free" button, let's create our flight path. 
 
 ![Region capture 20.png](https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-20.png)
 
-So here we have our flight path being created if the fPoints array has two points. Further more we're usign the geodesic property to create a euclidian line, as planes generally don't burrow through the earth to get from one point to the other. Farther down, we've got a confirmation that reset's the map upon the function being called with a different number of fPoints.
+So here we have our flight path being created if the fPoints array has two points. Further more we're using the geodesic property to create a euclidian line, as planes generally don't burrow through the earth to get from one point to the other. Farther down, we've got a confirmation that reset's the map upon the function being called with a different number of fPoints.
 
 But wait how is the distance going to be calculated??
 
