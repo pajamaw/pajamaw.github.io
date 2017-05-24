@@ -1,9 +1,8 @@
-    <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-6">
+                    <div class="footer-col col-md-4">
                         <h3>{{ site.footer.location }}</h3>
                         <p>
                             {% for adress in site.address %}
@@ -11,7 +10,7 @@
 		                    {% endfor %}
                         </p>
                     </div>
-                    <div class="footer-col col-md-6">
+                    <div class="footer-col col-md-4">
                         <h3>{{ site.footer.social }}</h3>
                         <ul class="list-inline">
                             {% for network in site.social %}
@@ -19,6 +18,12 @@
                                 <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
                             </li>
 		                    {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Or Take Pity on My Student Loans</h3>
+                        <ul class="list-inline">
+                          <li>ETH: 0xf5989EaeEF6B2F9067e04354Cb48d1365cd19B32</li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +40,6 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
