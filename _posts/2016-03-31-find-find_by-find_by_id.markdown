@@ -17,7 +17,7 @@ Find, find_by, and find_by_id
 
 
 
-These three selector class methods are not interchangable. Yes, you can use these all to return the same values when they exist within your database, but what makes them special and DIFFERENT is what happens when those values DONT exist.
+These three selector class methods are not interchangeable. Yes, you can use these all to return the same values when they exist within your database, but what makes them special and DIFFERENT is what happens when those values DONT exist.
 
 
 
