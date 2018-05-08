@@ -1,0 +1,57 @@
+<p>Recently I wanted to deploy my <a href="http://manilalist.herokuapp.com">Manila app</a> to heroku. But there was a problem. Heroku doesn’t accept sqlite3 databases…and rails ships out automatically with sqlite3. So what’s a man todo?</p>
+
+<p>Heroku primarily uses the Postgresql database adapter. This means that I need to transition my sqlite3 database to postgres from within my application. So let’s get started!</p>
+
+<p>I only had some test data within my development database so I’m not going to worry about moving that data into the new postgres database. (There are ways to do this with the <a href="http://blog.ragnarson.com/2013/10/24/easy-database-migration-using-taps.html">taps</a> gem, but for this we’ll just KISS :D )</p>
+
+<p>First in order to do this make sure you setup your heroku account and download the heroku CLI toolbelt.</p>
+
+<p>Now that you’ve done that let’s add a few gems in order to make this transition smooth.</p>
+
+<p>We’re going to add <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-11.png" alt="Region capture 1.png" /></p>
+
+<p>to our gemfile in order to specify that we’re using postgresql for our production database.</p>
+
+<p>We’re also going to remove sqlite3 from its normal spot in the gemfile and place it within the development test area. <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-2.png" alt="Region capture 2.png" /></p>
+
+<p>In addition to that we’ll add in the <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-31.png" alt="Region capture 3.png" /></p>
+
+<p>to allow the rails functionality in the heroku environment.</p>
+
+<p>Now make sure to run ‘bundle install’ in your terminal to add in these gems to your file!</p>
+
+<p>There are a few more housekeeping items we need to do still though to ensure functionality.</p>
+
+<p>Go to your config/environments/production.rb file and copy and paste this over the ‘config.assets.js_compressor = :uglifier’ code. <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-41.png" alt="Region capture 4" /></p>
+
+<p>(haha well actually just copy it down since it’s a picture file :P.jpeg)</p>
+
+<p>Heroku doesn’t support all js minifiers, so if you don’t follow this step you may be able to successfully deploy your app to heroku, but you may get errors such as ‘injector t invalid’ –which stem from the minifier. So get rid of that and don’t worry about the excess space you’re taking up!</p>
+
+<p>Now the big parts, lets reconfigure the database.yml file in your config folder. I commented out all but the default setting and put in the following: <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-5.png" alt="Region capture 5.png" /></p>
+
+<p>Now there are different norms for adding database names, but I like following that each database should have the prefix of the name of the app and the suffix being the stage in deployment.</p>
+
+<p>Great! save these changes with some good ol’ git add, commits and pushes and lets begin the fun part!</p>
+
+<p>Now first login to your heroku account by typing into the terminal ‘heroku login’ and add your information to log you in.</p>
+
+<p>NOW LETS GET READY TO DESTROY EVERYTHING.</p>
+
+<p>rake db:drop</p>
+
+<p>rake db:migrate</p>
+
+<p>rake db:create</p>
+
+<p>Now that we’ve dropped our databases and install them onto our new postgres databases lets add these to our heroku app!</p>
+
+<p>Type into terminal ‘heroku run rake:db migrate’</p>
+
+<p>You should see a bunch of sql fly through your terminal as everythings being created in front of you.</p>
+
+<p>Next we’ll push these changes to the newly created app.</p>
+
+<p>‘git push heroku master’.</p>
+
+<p>And congratulations! go to your heroku homepage and check out your newly deployed application.</p>

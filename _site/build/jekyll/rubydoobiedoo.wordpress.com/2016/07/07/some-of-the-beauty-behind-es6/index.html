@@ -1,0 +1,75 @@
+<p>So I’m not sure if you heard but Javascript recently (about a year ago so in tech terms not recent at all) got a bit of an upgrade! ES6 or ECMAScript2015! Now last year when it originally came out, browser support for ES6 was quite limited, but you could transpile it into ES5 code…but who likes extra steps?</p>
+
+<p>Now that it’s been a full year, ES6 is fully supported by browsers and ES7 is currently on its way. You can read more about this transition over <a href="http://v8project.blogspot.com/2016/04/es6-es7-and-beyond.html">here</a>, since I’m done talking about the future.</p>
+
+<p>Because who can rightly prepare for the future, without an adequate understanding of the past and present?</p>
+
+<p><img src="https://rubydoobiedoo.files.wordpress.com/2016/07/giphy-1.gif" alt="giphy (1).gif" /></p>
+
+<p>Be prepared…</p>
+
+<p>So to begin, what is  Javascript? Well, let’s take a look at what the experts at <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a> said:</p>
+
+<p>“<strong>JavaScript</strong> (<a href="https://en.wikipedia.org/wiki/Help:IPA_for_English">/ˈdʒɑːvəˌskrɪpt/</a><a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-5">[5]</a>) is a<a href="https://en.wikipedia.org/wiki/High-level_programming_language">high-level</a>, <a href="https://en.wikipedia.org/wiki/Dynamic_programming_language">dynamic</a>, <a href="https://en.wikipedia.org/wiki/Programming_language#Type_system">untyped</a>, and<a href="https://en.wikipedia.org/wiki/Interpreted_language">interpreted</a> programming language.<a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-FOOTNOTEFlanagan20111-6">[6]</a> It has been standardized in the <a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a>language specification.<a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-FOOTNOTEFlanagan20112-7">[7]</a> Alongside<a href="https://en.wikipedia.org/wiki/HTML">HTML</a> and <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>, it is one of the three core technologies of <a href="https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a> content production; the majority of <a href="https://en.wikipedia.org/wiki/Website">websites</a> employ it and it is supported by all modern <a href="https://en.wikipedia.org/wiki/Web_browser">Web browsers</a> without <a href="https://en.wikipedia.org/wiki/Browser_extension">plug-ins</a>.<a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-FOOTNOTEFlanagan20111-6">[6]</a>JavaScript is <a href="https://en.wikipedia.org/wiki/Prototype-based_programming">prototype-based</a> with<a href="https://en.wikipedia.org/wiki/First-class_function">first-class functions</a>, making it a<a href="https://en.wikipedia.org/wiki/Multi-paradigm">multi-paradigm</a> language, supporting<a href="https://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented</a>,<a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-ECMA-262-8">[8]</a> <a href="https://en.wikipedia.org/wiki/Imperative_programming">imperative</a>, and<a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> programming styles.<a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-FOOTNOTEFlanagan20111-6">[6]</a> It has an <a href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a> for working with text,<a href="https://en.wikipedia.org/wiki/Array_data_type">arrays</a>, dates and <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a>, but does not include any <a href="https://en.wikipedia.org/wiki/Input/output">I/O</a>, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.<a href="https://en.wikipedia.org/wiki/JavaScript#cite_note-FOOTNOTEFlanagan20112-7">[7]</a>”</p>
+
+<p><img src="https://rubydoobiedoo.files.wordpress.com/2016/07/jfx8rig.jpg" alt="JfX8Rig.jpg" /></p>
+
+<p>More or less, it’s a scripting, dynamic, non-true OO language, that all major web browsers rely on in order to function. It’s also become a popular server-side language, with the growing popularity of Node.js. One of the most interesting features of it grants it one of todays most notable function, the ability to asynchronously update a webpage, making realtime data adjustment (think of autocomplete, map updates, any sort of instant data aggregator like stocks) possible!</p>
+
+<p>Wow PJ! That’s incredible, but isn’t it weird that it’s the only language of the  <a href="http://pypl.github.io/PYPL.html">top 5 programming languages</a> that isn’t an OO language?</p>
+
+<p>Glad you asked informed reader!</p>
+
+<p>Well it’s not a true OO language, it’s a prototype-based OO language. Meaning that instead of using classical inheritance, where an object will be instantiated via a class and will inherit all the functions from said class, which can then be linked into a hierarchy by the class - Prototypal works by allowing objects to indirectly inherit from other objects, allowing you to indirectly create a form of inheritance from classes that do not need to be truly related.</p>
+
+<p>Now E6 has brought about a lot of cool (if you’re into OO) features that are brand new to vanilla JS  and that previous versions of JS allowed you to do, but via roundabout/hacky programming.</p>
+
+<p>Now just a disclaimer, I’m no professor of JS, and I’m definitely not an expert. I’m simply a new, young, probably naive, programmer that is trying to understand this massive mound of information as well as I can - while helping others to do the same. <a href="https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3#.xlv3np4nc">Some</a> may say that it’s a bad thing, that OO languages are not the way to go and that Javascript’s malleability is one of its strongest attributes, that this bearing towards OO land is bad. As a new programmer though, I find OO languages very straightforward, they make sense, they mimic the world we live in, so I’m a fan.</p>
+
+<p>Cool so let’s begin, and what better feature to begin with than…</p>
+
+<p><strong>CLASS INHERITANCE</strong></p>
+
+<p>So in previous versions of JS, if you wanted to inherit from another object you had to first create your “class object” <img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-3.png" alt="Region capture 3.png" /></p>
+
+<p>and then extend it to another object. <img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-4.png" alt="Region capture 4" /></p>
+
+<p>but unfortunately here, if we were to check and see our square.constructor -&gt; it would end up being classified as Polygon, which we don’t want. We want it to be classifed as a Square! so now we have to go back in <img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-5.png" alt="Region capture 5.png" /></p>
+
+<p>FINALLY DONE.</p>
+
+<p>Well let’s take a look at our new class constructor in Es6, <img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-7.png" alt="Region capture 7" /></p>
+
+<p>and now try to extend it..<img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-8.png" alt="Region capture 8.png" /></p>
+
+<p>and now we’re done! wow, so it simplifies the entire process in an organized manner and then allows you to ‘super’ the previous arguments required to instantiate and still use the get area() method (a getter method btw!).</p>
+
+<p>Incredible PJ!….but what else?</p>
+
+<p><strong>STRING INTERPOLATION</strong></p>
+
+<p>And no I didn’t misspeak, no longer will we have to use string contecation as this isn’t your father’s string input method. Now we can write,</p>
+
+<p><img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-9.png" alt="Region capture 9.png" /></p>
+
+<p>and guess what it’ll print out if you call the sentence var?</p>
+
+<p>“This finally works”.</p>
+
+<p>HOW GREAT IS THAT. No more playing with 1000 little +’s.</p>
+
+<p><strong>PROMISES</strong></p>
+
+<p>Promises are a whole blog post of their own, but until then know that vanilla javascript now supports them without the use of other libraries.</p>
+
+<p><strong>ARROW FUNCTIONS</strong></p>
+
+<p>Arrow functions are also very cool shortcuts for previously wordy code, and I still need to play around with them a lot more but until then check out this great example of how they now work. <img src="https://rubydoobiedoo.files.wordpress.com/2016/07/region-capture-10.png" alt="Region capture 10.png" /></p>
+
+<p>Cool right?</p>
+
+<p>Those are some of the new features that I find extremely interesting, and I definitely think we’ll be seeing them come up more and more often as we move forward.</p>
+
+<p>ES6 and Javascript in general is a fascinating language with a lot of depth. I encourage everyone to readup on not only the current implementations but also the past, as it gives you a better understanding of how things work they way they do and where it’s headed.</p>
+
+<p>In the meantime, I also recommend trying out <a href="https://github.com/olistic/warriorjs">WarriorJS</a>, to practice these skills!</p>

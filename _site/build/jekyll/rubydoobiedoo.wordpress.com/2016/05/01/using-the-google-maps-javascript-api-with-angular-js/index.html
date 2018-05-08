@@ -1,0 +1,39 @@
+<p>Google Maps is an absolutely amazing tool of the modern age, and all of its glorious utility, from its visualizations of traffic layers to its topographic map layers - is available to use FOR FREE through the use of its API.</p>
+
+<p>If you’d like to see the angular documentation for using specific features then feel free to check out the angular documentation on it <a href="https://angular-ui.github.io/angular-google-maps/#!/api/GoogleMapApi">here</a>. Assuming of course your application won’t be making over 100,000 api requests everyday for a course of 90 days (in this case this little setup may not help you!) here’s a brief overview of the first few steps to create your project access key and setup the map on your app!</p>
+
+<p>The rundown on how to do this goes like this.</p>
+
+<ol>
+  <li>
+    <p>Go to <a href="https://developers.google.com/maps/documentation/javascript/examples/place-details">the google maps developer page</a> and sign in with the account that you’d like to use as a “Google Developer” (Don’t go off thinking that you can use that title for your next resume spot though…)</p>
+  </li>
+  <li>
+    <p>On the top left click the get a key icon <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-1.png" alt="Region capture 1.png" /></p>
+  </li>
+  <li>
+    <p>You’ll be asked to sign in again after a prompt telling you that you’ll need to create a project. Once you get to the Google APIs page you’ll register your new application. By going to the bottom and pressing “Continue”.</p>
+  </li>
+  <li>
+    <p>The next page you can name your specific browser key and after you press create you’ll receive your API key!</p>
+  </li>
+  <li>
+    <p>At this point you can add additional credentials if you’d like your app to send push notifications or would like your app to access the personal data via google omniauth.</p>
+  </li>
+  <li>
+    <p>Next, ensure that you have downloaded the angular-google-maps angular js package. You can do that by accessing the full code from the <a href="https://angular-ui.github.io/angular-google-maps/#!/api/GoogleMapApi">documentation</a> or by running “bower install angular-google-maps –save”. Afterwards, install angular-simple-logger through the same method.</p>
+  </li>
+  <li>
+    <p>With those dependencies added, require the location paths into the necessary view files (or sprockets for rails/sprockets-alternative for non-rails apps). A sprockets file will look something along the lines of this. <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-3.png" alt="Region capture 3.png" />Note: you may also have to add in Lodash, in some cases depending on the version of the API.</p>
+  </li>
+  <li>
+    <p>Next you’ll want to configure the directive after adding it to your angular module alongside nemLogging. The additional libraries can be added for particular google maps data attributes, which can be found in the <a href="https://angular-ui.github.io/angular-google-maps/#!/api/GoogleMapApi">documentation</a>. <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-4.png" alt="Region capture 4" /><img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-6.png" alt="Region capture 6" /></p>
+  </li>
+  <li>
+    <p>Next lets setup your controller so that you can setup the directive within the view by configuring the map attributes. <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-8.png" alt="Region capture 8" />Other attributes are available, such as editable markers, but we’ll just stick with the basics for now.</p>
+  </li>
+  <li>
+    <p>Finally add in the directive to the view page and call the map attributes. <img src="https://rubydoobiedoo.files.wordpress.com/2016/05/region-capture-9.png" alt="Region capture 9" />And wala! You should have a working google maps in the view of your application.</p>
+  </li>
+</ol>
+
