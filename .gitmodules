@@ -6,4 +6,4 @@
 	url = https://github.com/pajamaw/bv-homepage
 [submodule "dapp-dapp-goose"]
 	path = dapp-dapp-goose
-	url = https://github.com/pajamaw/dapp-dapp-goose
+	url = git@github.com:pajamaw/dapp-dapp-goose.git
