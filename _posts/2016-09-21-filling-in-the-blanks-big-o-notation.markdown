@@ -9,8 +9,6 @@ title: 'Filling in the Blanks: Big O Notation'
 
 Big O notation can be _different_ to those unfamiliar with the concept. So to begin here's a little road map of a few hot topics that I find frequently when the subject is spoken about.
 
-
-
 	
   1. What is Big O (and which one are we talking about?)
 
