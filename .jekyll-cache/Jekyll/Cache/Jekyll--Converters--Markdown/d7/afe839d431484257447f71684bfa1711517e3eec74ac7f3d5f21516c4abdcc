@@ -1,6 +1,4 @@
-I"�@<p>This is the first (real) post in my Filling in the Blanks series. If you’re like me, you most likely went through a programming bootcamp of some kind in hopes to achieve fame, fortune, a new hobby, and/or a job! If you are I wish you luck in all of your pursuits, and hope this finds you in time for that big interview.</p>
-
-<p>Big O notation can definitely be a scary principle to those unfamiliar with the concept. So to begin here’s a little road map of a few hot topics that I find frequently when the subject is spoken about.</p>
+I"A9<p>Big O notation can be <em>different</em> to those unfamiliar with the concept. So to begin here’s a little road map of a few hot topics that I find frequently when the subject is spoken about.</p>
 
 <ol>
   <li>
@@ -14,53 +12,41 @@
   </li>
 </ol>
 
-<p>Before we go into though, I just want to add the disclaimer</p>
-
 <h2 id="what-isbig-o">What is Big O?</h2>
 
-<p>Great question(s)!</p>
-
-<p>Big O describes the efficiency of an algorithm. Specifically it’s used to describe both the efficiency in time (Big O Time) and memory use (Big O Space) of an algorithm. Before we go further, remember that an algorithm doesn’t necessarily just connect you to a huge complicated calculus theorem, every method/function that you create in programming is an algorithm.</p>
+<p>Big O describes the efficiency of an algorithm. Specifically it’s used to describe both the efficiency in time (Big O Time) and memory use (Big O Space) of an algorithm. If you’re non-technical, know that an algorithm is just a process of operations designed to solve a problem.</p>
 
 <p>Sorting through an array? You just used an algorithm!</p>
 
 <p>Selecting an instance from a database? Algorithm!</p>
 
-<p>Everything we do in programming is algorithmic, even if you didn’t realize it.</p>
+<p>Finding the middle point for you and a friend to meet? Algoooo</p>
 
-<p>Now there are actually three different types of Big O used in academia (Big O, Big Omega, and Big Theta) to describe runtime. Big O corresponds to the upper bound in a graph, Big Omega the lower bound, and Big Theta the tight bound.</p>
+<p>Now there are three different types of Big O used in academia (Big O, Big Omega, and Big Theta) to describe runtime. Big O corresponds to the upper bound in a graph, Big Omega the lower bound, and Big Theta the tight bound.</p>
 
-<p>Now don’t get these concepts confused with best, worst, and expected case scenarios, because they don’t actually correspond with any in particular each O notation can be used to describe each scenario. That being we will talk about the Big notation used in programming, Big O (which in academia is closer to Big Theta) i.e. the tight bound for a function.</p>
+<p>These concepts shouldn’t be confused with best, worst, and expected case scenarios; each O notation can be used to describe each scenario. That being said, the Big notation used in programming, Big O (which in academia is closer to Big Theta) i.e. the tight bound for a function will be focused on.</p>
 
-<p>So, back to a general programming definition, Big O describes the rate of increase (in memory i.e. space or time) as “n”, your input, goes up. If your “n” is equal to an array, and you have to iterate through that array, you’re going to do that in Big O(n) time, where n is the number of elements in the input array. If you have an array that you’re grabbing an element from a specific index, that will take Big O(1) time, as it is done in 1 step no matter how large the array is.</p>
+<p>Big O describes the rate of increase (in memory i.e. space or time) as “n”, your input, goes up. If your “n” is equal to an array, and you have to iterate through that array, you’re going to do that in Big O(n) time, where n is the number of elements in the input array. If you have an array that you’re grabbing an element from a specific index, that will take Big O(1) time, as it is done in 1 step no matter how large the array is.</p>
 
-<p>Say we needed to run through an array twice,  does it take Big O(2n) time? No we’d still say that it takes Big O(n) time. When we describe Big O we don’t use constants. A function that runs in Big O(n) we say will equal a function that runs in Big O(2n) because for different values of “n” those can be equal. So never use constants when you’re describing a runtime!</p>
+<p>Say we needed to run through an array twice,  does it take Big O(2n) time? No, we’d still say that it takes Big O(n) time. When we describe Big O we don’t use constants. A function that runs in Big O(n) we say will equal a function that runs in Big O(2n) because for different values of “n” those can be equal. So never use constants when you’re describing a runtime!</p>
 
 <h2 id="why-big-o">Why Big O?</h2>
 
-<p>So as you might be figuring it out now, we use Big O to find the time and memory that will be required to run a function. But what does that really mean and why should I care?</p>
+<p>We use Big O to find the time and memory that will be required to run a function. But what does that really mean and why care?</p>
 
-<p>Well let’s say that you just got a job with a dating company with 200 members (no worries I’m sure it’ll get more successful!) and this job pays you to pick matches for OTHER people. It’s got 100 guys and 100 girls. Those profiles are in one array and each user can match with either sex (cause we’re being progressive in this post). Well let’s say that the company doesn’t allow you to skip users, and users don’t get removed from the dating pool when they’re matched with someone else.</p>
+<p>Well let’s say that you just got a job with a dating company with 200 members and this job pays you to pick matches among those people. 100 guys and 100 girls. Profiles are in an array and each user can match with either sex. Well let’s say that the company doesn’t allow you to skip users, and users don’t get removed from the dating pool when they’re matched with someone else.</p>
 
-<p>Well, you want to get paid, so you begin. It gives you one person’s picture and then you go through each of the 200 (including the same person’s picture) as you get matches. Until you go through each match, then on to the next…ad nauseum. You take about 5 seconds per picture because you care (a little) but you don’t get your check until you finish, so you finish….55.55 hours later! That’s because the run time for the function is Big O(n^2). For each (n) or element of the array, you have to go through the each (n) or element of the array.</p>
+<p>So you begin manually. You’re presented with one person’s picture and then you go through each of the 200 (including the same person’s picture) to create matches. Until you go through each potential partner, then you start on the second partner…ad nauseum. It takes about 5 seconds per picture and since you don’t get your check until you finish, it takes 55.55 hours! That’s because the run time for the function is Big O(n^2). For each person on the site, you have to go through the every individual again.</p>
 
-<p>Well now you’re thinking well this has to get better if the company was more efficient right? 55.55 hour work days are a lot too! So you find a company that has 200 users, but they’re in two different arrays, a men and women’s array. It gives you a random gender’s picture and now you have to cycle through each female picking matches until you’re at the end of the girls, and then to the next guy, and again a cycle through each female …ad nauseum. Then once you finish the first gender you do the second gender. Well how long till you get paid? If it takes you 5 second per couple again, it will take you just under 27 hours to do it! That’s a significantly better workday!.</p>
+<p>What’s more efficent? Just about anything. You could seek to limit the number of users that an individual get’s access to by grouping and matching based upon a set of preferences. Or stop once a user has a certain number of matches.</p>
 
-<p>Now we would say that this is Big O(2(m<em>w)) where m is the length of the men’s array and w is the length of the women’s array, and even though we’re going through the same number of users, it takes less than half  of the time. Remember though, in a real setting we would describe this as Big O(m</em>w) as we should drop the constants.</p>
-
-<p>But what about Big O space? Well let’s use those 2 examples again. In both companies you’ll have to use some sort of data structure to store your matches for a person. Let’s say you use an array. That means that each person will need to have their own array for their matches. That means you’re about to build out 200 array’s of up to 200 people each…now that doesn’t take any time to make as pushing to an array takes Big O(1) time. but it will take up (n^2) space. That also means that the second company, if they’re using the same system will take m<em>w + m</em>w or Big O(m*w) time (as we drop the constant).</p>
-
-<p>There are definitely better ways to store such information, and we haven’t even gotten into utilizing them for matches! But already you can start to see how Big O would be used to describe real situations.</p>
+<p>But what about Big O space? Well let’s use those that examples again. In the situation you’ll have to use some sort of data structure to store your matches for a person. Let’s say you use another array. That means that each person will need to have their own  for their matches. That means you’re about to build out 200 array’s of up to 200 people each…now that doesn’t take much time to add to as pushing to an array takes Big O(1) time. But now you have n users each with an n sized array that’s n^2 spaced. The problems you face when you start to consider the implications of algorithms speed and space constraints will often be give and take. It’s always about finding the solution with the best pro to con ratio for your situation.</p>
 
 <h2 id="examples-of-big-o-in-the-not-so-wild-datastructures-and-sorts">Examples of Big O in the Not-So Wild: Datastructures and Sorts</h2>
 
-<p>But even then, Big O comes in the most handy when you use them to think about advanced data structures and sorting algorithms. We’re going to be going over these in the next several posts in this series, but for now, we’ll just begin by describing them and their various methods and runtimes.</p>
+<p>Big O comes in the most handy when thinking about data structures and sorting algorithms. We’re going to be going over these in the next several posts in this series, but for now, we’ll just begin by describing them and their various methods and runtimes.</p>
 
 <p>First <img src="https://rubydoobiedoo.files.wordpress.com/2016/09/region-capture-2.png" alt="Region capture 2.png" /></p>
-
-<p>Wow, you might be saying how do you even make sense of these charts?</p>
-
-<p>One at a time! (And skipping the hard ones :) )</p>
 
 <h3 id="datastructures-">Datastructures :</h3>
 
