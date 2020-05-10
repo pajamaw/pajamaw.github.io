@@ -1,12 +1,10 @@
 ---
-author: rubydoobiedoo
+author: PJ Wickwire
 comments: true
 date: 2016-09-21 17:18:35+00:00
 layout: post
-link: https://rubydoobiedoo.wordpress.com/2016/09/21/filling-in-the-blanks-big-o-notation/
 slug: filling-in-the-blanks-big-o-notation
 title: 'Filling in the Blanks: Big O Notation'
-wordpress_id: 1607
 ---
 
 Big O notation can be _different_ to those unfamiliar with the concept. So to begin here's a little road map of a few hot topics that I find frequently when the subject is spoken about.

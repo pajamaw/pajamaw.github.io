@@ -1,12 +1,10 @@
 ---
-author: rubydoobiedoo
+author: PJ Wickwire
 comments: true
 date: 2016-09-15 17:42:37+00:00
 layout: post
-link: https://rubydoobiedoo.wordpress.com/2016/09/15/the-end-that-matters-the-end-user/
 slug: the-end-that-matters-the-end-user
 title: 'The -end that matters: The End-User'
-wordpress_id: 1422
 ---
 
 "How do you know when 30 minutes has gone by, when all you have is a set of matches, a rope that has random points of density whose entirety will be consumed in one hour?"
