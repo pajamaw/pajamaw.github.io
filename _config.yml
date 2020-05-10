@@ -1,10 +1,10 @@
 # Site settings
-title: PJ Wickwire
+title: pajamaw
 email: pjpeterww@gmail.com
 url: https://pajamaw.github.io
 description: "Full Stack Engineer - Tinkerer - Map Enthusiast"
 skills: "Full Stack Engineer - Tinkerer - Map Enthusiast"
-meta_author: Wickwire PJ
+meta_author: PJ Wickwire
 
 # Google webmaster tools
 google_verify:
@@ -49,8 +49,7 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 176 2nd Ave Apt 2f
-  - line: New York, NY 10003
+  - line: New York, NY
 
 # Credits content
 #credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'

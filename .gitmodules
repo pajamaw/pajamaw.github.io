@@ -1,9 +1,0 @@
-[submodule "nautical"]
-	path = nautical
-	url = https://github.com/pajamaw/nautical-flights
-[submodule "bv-homepage"]
-	path = bv-homepage
-	url = https://github.com/pajamaw/bv-homepage
-[submodule "dapp-dapp-goose"]
-	path = dapp-dapp-goose
-	url = git@github.com:pajamaw/dapp-dapp-goose.git
