@@ -11,11 +11,11 @@ I've got them listed in a few places but having them public is a nice change of 
 
 ## Pandemic Projects
 
-_1. Get site back up and running_
+1. ~~Get site back up and running~~
 1. Do the splits
 1. Finish the Yale Happiness Course
 1. Finish the Malware Class https://class.malware.re
-_1. Finish Quality of Speaking Lecture and chart goals for communication_
+1. ~~Finish Quality of Speaking Lecture and chart goals for communication~~
 1. Juggle 5 balls
 1. Build a dumb/easy/simple project and go through the motions and set it up on Product hunt
 

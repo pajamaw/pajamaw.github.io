@@ -1,0 +1,26 @@
+{% include header.html %}
+<div class="container container-left">
+  <div class="row">
+      <div class="col-md-3 hidden-xs">
+          {% include sidebar.html %}
+      </div>
+      <div class="col-md-9">
+      {% for post in site.posts limit:10 %}
+        <div class="well">
+          <h4><a href={{ post.url | prepend: site.url }}>{{ post.title }}</a></h4>
+          <div>{{ post.description | xml_escape }}</div>
+          <p>{{ post.date | date_to_rfc822 }}</p>
+          
+          {% for tag in post.tags %}
+            <a>{{ tag | xml_escape }}</a>
+          {% endfor %}
+          
+          {% for cat in post.categories %}
+            <a>{{ cat | xml_escape }}</a>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
