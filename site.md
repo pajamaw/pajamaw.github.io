@@ -20,6 +20,15 @@ I miss the [link needed]renaissance man. The encyclopedic human, that had a repo
 
 I felt for a long time this meant one had to retain this knowledge without help. I've learned that not only is that belief incorrect in the days of old, but foolish today. One should use any and every tool at their disposal. And this will be a tool to offload some of my mental activity. 
 
+## Todo
+
+Write a new post on finance with programming 
+
+Start migrating my knowledge base to either a wiki....a pretty good idea or trillium and use this as the central hub for it 
+
+Start with Anki 
+
+
 
 ## Inspiration
 
