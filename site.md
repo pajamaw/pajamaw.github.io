@@ -28,7 +28,9 @@ Start migrating my knowledge base to either a wiki....a pretty good idea or tril
 
 Start with Anki 
 
+Decide what to do about the links - i'm thinking how to get to me. But also could be used as a to do list or places i like to go to start my day
 
+Make a nice little commit script for updates with an easy commit message
 
 ## Inspiration
 
