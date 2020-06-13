@@ -2,11 +2,6 @@
 layout: default_no_footer
 ---
 
-I'm not sure what to put here yet. I mean I definitely need some content for now. 
-
-Possibly put down my automations or my current big goals. 
-I've got them listed in a few places but having them public is a nice change of pace
-
 # Current Big Goals
 
 1. Finish personal knowledge base transition
@@ -19,7 +14,7 @@ I've got them listed in a few places but having them public is a nice change of 
 1. Finish the Malware Class https://class.malware.re
 1. ~~Finish Quality of Speaking Lecture and chart goals for communication~~
 1. Juggle 5 balls
-1. Build a dumb/easy/simple project and go through the motions and set it up on Product hunt
+1. Build a simple project and set it up on Product hunt
 
 *Stretch Goals*
 

@@ -5,9 +5,19 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 May 2020 13:27:21 -0400</pubDate>
-    <lastBuildDate>Thu, 14 May 2020 13:27:21 -0400</lastBuildDate>
-    <generator>Jekyll v4.0.1</generator>
+    <pubDate>Sat, 13 Jun 2020 18:20:04 -0400</pubDate>
+    <lastBuildDate>Sat, 13 Jun 2020 18:20:04 -0400</lastBuildDate>
+    <generator>Jekyll v4.1.0</generator>
+    
+      <item>
+        <title>Rant: Roam from Chrome</title>
+        <description></description>
+        <pubDate>Sat, 13 Jun 2020 17:22:51 -0400</pubDate>
+        <link>http://localhost:4000/2020/06/13/roam-from-chrome/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/06/13/roam-from-chrome/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Filling in the Blanks: Big O Notation</title>
