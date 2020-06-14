@@ -14,7 +14,7 @@ layout: default_no_footer
 1. Finish the Malware Class https://class.malware.re
 1. ~~Finish Quality of Speaking Lecture and chart goals for communication~~
 1. Juggle 5 balls
-1. Build a simple project and set it up on Product hunt
+1. ~~[Build a simple project](http://github.com/pajamaw/chrome-to-firefox)~~ and set it up on Product hunt
 
 *Stretch Goals*
 
