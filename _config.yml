@@ -5,6 +5,7 @@ url: https://pajamaw.github.io
 description: "PJ Wickwire writes stuff here"
 # skills: "" not sure if I like this areas anymore
 meta_author: PJ Wickwire
+comments: true
 
 collections: 
   projects:
