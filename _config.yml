@@ -23,7 +23,7 @@ bing_verify:
 #contact: static
 
 # https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: pajamaw
+disqus: pajamaw
 
 color:
   primary:  d9d9d9 #80B3FF
