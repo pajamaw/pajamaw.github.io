@@ -22,15 +22,15 @@ I felt for a long time this meant one had to retain this knowledge without help.
 
 ## Todo
 
-Write a new post on finance with programming 
+- Write a new post on finance with programming 
 
-Start migrating my knowledge base to either a wiki....a pretty good idea or trillium and use this as the central hub for it 
+- Start migrating my knowledge base to either a wiki....a pretty good idea or trillium and use this as the central hub for it 
 
-Start with Anki 
+- Begin using spaced repitition methodologies on knowledge base 
 
-Decide what to do about the links - i'm thinking how to get to me. But also could be used as a to do list or places i like to go to start my day
+- Begin creating tags that can connect major ideas and themes
 
-~~Make a nice little commit script for updates with an easy commit message~~
+- ~~Make a nice little commit script for updates with an easy commit message~~
 
 Add Projects
 
@@ -40,8 +40,8 @@ Add Projects
 
 [Trillium](https://github.com/zadam/trilium)
 
-Blogs:
- [https://wiki.nikitavoloboev.xyz/](https://wiki.nikitavoloboev.xyz/)
+### Blogs:
+[https://wiki.nikitavoloboev.xyz/](https://wiki.nikitavoloboev.xyz/)
 
 [https://beepb00p.xyz/site.html](https://beepb00p.xyz/site.html)
 

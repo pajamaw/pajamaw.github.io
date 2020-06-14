@@ -1,8 +1,14 @@
 body {
     padding-top: 60px;
     padding-bottom: 60px;
+    font-size: 16px;
+    /* 538 blog */
+    /* font-family: ArnhemPro,Georgia,"Helvetica Neue",sans-serif} */
+    /* Like a lighter Futura */
+    /* font-family: PT Sans; */
+    /* My favorite so far  */
+    font-family: Futura;
 }
-
 .copyright {
     color: #ffffff;
 }

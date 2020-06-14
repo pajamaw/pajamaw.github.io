@@ -40,7 +40,7 @@ Pretty pathetic.
 
 I want to be a little better. 
 
-[I made a thing.](https://github.com/pajamaw/chrome-to-firefox)
+[So I made a thing.](https://github.com/pajamaw/chrome-to-firefox)
 
 Hopefully this prevents others from similar turmoils. 
 
