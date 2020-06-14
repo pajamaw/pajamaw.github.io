@@ -1,4 +1,6 @@
-html, body {
+
+/* This is for/from my nautical-flights app */
+/* html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -21,7 +23,6 @@ html, body {
     z-index: 1 !important;
 }
 
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -35,4 +36,8 @@ ul li form h3{
   float: left;
   display: block;
   padding: 4px;
+} */
+/* End of nautical-flights */
+.navbar-nav.navbar-right:last-child {
+  margin-right: 30px;
 }

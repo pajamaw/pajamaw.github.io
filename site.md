@@ -30,17 +30,20 @@ Start with Anki
 
 Decide what to do about the links - i'm thinking how to get to me. But also could be used as a to do list or places i like to go to start my day
 
-Make a nice little commit script for updates with an easy commit message
+~~Make a nice little commit script for updates with an easy commit message~~
+
+Add Projects
 
 ## Inspiration
 
-Alfred-my-mind
+[Alfred-my-mind](https://github.com/nikitavoloboev/alfred-my-mind)
 
-Trillium
+[Trillium](https://github.com/zadam/trilium)
 
-https://wiki.nikitavoloboev.xyz/
+Blogs:
+ [https://wiki.nikitavoloboev.xyz/](https://wiki.nikitavoloboev.xyz/)
 
-https://beepb00p.xyz/site.html
+[https://beepb00p.xyz/site.html](https://beepb00p.xyz/site.html)
 
 Sherlock Holmes
 

@@ -1,0 +1,17 @@
+{% include header.html %}
+<div class="container container-left">
+  <div class="row">
+      <div class="col-md-3 hidden-xs">
+          {% include sidebar.html %}
+      </div>
+      <div class="col-md-9">
+      {% for project in site.projects limit:10 %}
+        <div class="well">
+          <h4><a rel="external" target="_blank" href={{ project.url }}>{{ project.title }}</a></h4>
+          <div>{{ project.description | xml_escape }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
