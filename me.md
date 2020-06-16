@@ -55,6 +55,8 @@ Profitable Projects
 
 Doing the splits
 
+Shoshin
+
 ### I no longer want to spend time on
 
 [Reading without internalizing](https://en.wikipedia.org/wiki/Spaced_repetition)
@@ -62,3 +64,5 @@ Doing the splits
 Bad Advertisements
 
 [Thanksgiving Debates](https://fivethirtyeight.com/features/how-to-fight-with-your-family-at-thanksgiving/)
+
+Inefficient searching of my own notes
