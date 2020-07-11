@@ -30,7 +30,7 @@ I felt for a long time this meant one had to retain this knowledge without help.
 
 - Start migrating my knowledge base from my notes....a pretty good idea or trillium and use this as the central hub for it 
 
-- Setup spaced repitition methodologies on knowledge base 
+- ~~Setup spaced repitition methodologies~~ on knowledge base 
 
 - Begin creating tags that can connect major ideas and themes
 
@@ -38,7 +38,7 @@ I felt for a long time this meant one had to retain this knowledge without help.
 
 ### Inspiration
 
-[Alfred-my-mind](https://github.com/nikitavoloboev/alfred-my-mind)
+[Alfred My Mind](https://github.com/nikitavoloboev/alfred-my-mind)
 
 [Trillium](https://github.com/zadam/trilium)
 
@@ -46,12 +46,13 @@ Mr Owl
 
 [Memex](https://github.com/WorldBrain/memex)
 
-#### Blogs:
-[https://wiki.nikitavoloboev.xyz/](https://wiki.nikitavoloboev.xyz/)
+#### Blogs
 
-[https://beepb00p.xyz/site.html](https://beepb00p.xyz/site.html)
+[wiki.nikitavoloboev.xyz](https://wiki.nikitavoloboev.xyz/)
 
-[https://www.tbray.org/ongoing/](https://www.tbray.org/ongoing/WhatItIs)
+[beepb00p.xyz](https://beepb00p.xyz/site.html)
 
-[https://thehftguy.com/](https://thehftguy.com/)
+[tbray.org](https://www.tbray.org/ongoing/WhatItIs)
+
+[thehftguy.com](https://thehftguy.com/)
 
