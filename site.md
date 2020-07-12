@@ -46,6 +46,8 @@ Mr Owl
 
 [Memex](https://github.com/WorldBrain/memex)
 
+[Quantified Self](https://quantifiedself.com/)
+
 #### Blogs
 
 [wiki.nikitavoloboev.xyz](https://wiki.nikitavoloboev.xyz/)
