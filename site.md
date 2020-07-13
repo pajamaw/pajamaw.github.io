@@ -59,3 +59,5 @@ Mr Owl
 [thehftguy.com](https://thehftguy.com/)
 
 [kk.org](https://kk.org)
+
+[Joe Balcom](https://joebalcom.blog)
