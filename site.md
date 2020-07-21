@@ -61,3 +61,5 @@ Mr Owl
 [kk.org](https://kk.org)
 
 [Joe Balcom](https://joebalcom.blog)
+
+[Fs Blog](https://fs.blog/mental-models/)
