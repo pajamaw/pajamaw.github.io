@@ -1,13 +1,17 @@
+/* @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500'; */
+
 body {
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 16px;
+    color: #444;
     /* 538 blog */
     /* font-family: ArnhemPro,Georgia,"Helvetica Neue",sans-serif} */
     /* Like a lighter Futura */
     /* font-family: PT Sans; */
     /* My favorite so far  */
-    font-family: Futura;
+    /* font-family: "Roboto", "Futura", "Arial", sans-serif; */
+    font-family: "Futura", "Roboto", "Arial", sans-serif;
 }
 .copyright {
     color: #ffffff;
