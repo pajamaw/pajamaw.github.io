@@ -13,7 +13,7 @@ layout: default_no_footer
 
 1. ~~Get site back up and running~~
 1. ~~Finish the Yale Happiness Course~~
-1. Finish a [Malware Class](https://class.malware.re)
+1. Finish [Malware Class](https://class.malware.re)
 1. ~~Finish Quality of Speaking Lecture and chart goals for communication~~
 1. ~~[Build a simple project](http://github.com/pajamaw/chrome-to-firefox)~~ and set it up on Product hunt
 
