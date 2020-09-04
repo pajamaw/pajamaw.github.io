@@ -10,8 +10,10 @@ body {
     /* Like a lighter Futura */
     /* font-family: PT Sans; */
     /* My favorite so far  */
+    font-family: "Futura", "PT Sans", "Arial", sans-serif;
+    /* This is a gerat one from a random design blog */
     /* font-family: "Roboto", "Futura", "Arial", sans-serif; */
-    font-family: "Futura", "Roboto", "Arial", sans-serif;
+
 }
 .copyright {
     color: #ffffff;

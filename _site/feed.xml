@@ -3,18 +3,18 @@
   <channel>
     <title>pajamaw</title>
     <description>PJ Wickwire writes stuff here</description>
-    <link>https://pajamaw.github.io/</link>
+    <link>http://localhost:4000/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Sep 2020 17:43:38 -0400</pubDate>
-    <lastBuildDate>Thu, 03 Sep 2020 17:43:38 -0400</lastBuildDate>
+    <pubDate>Fri, 04 Sep 2020 12:58:19 -0400</pubDate>
+    <lastBuildDate>Fri, 04 Sep 2020 12:58:19 -0400</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
         <title>why i write</title>
         <description></description>
         <pubDate>Sat, 11 Jul 2020 12:12:00 -0400</pubDate>
-        <link>https://pajamaw.github.io/2020/07/11/why-i-write/</link>
-        <guid isPermaLink="true">https://pajamaw.github.io/2020/07/11/why-i-write/</guid>
+        <link>http://localhost:4000/2020/07/11/why-i-write/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/07/11/why-i-write/</guid>
         
         
       </item>
@@ -23,8 +23,8 @@
         <title>Rant: Roam from Chrome</title>
         <description></description>
         <pubDate>Sat, 13 Jun 2020 17:22:51 -0400</pubDate>
-        <link>https://pajamaw.github.io/2020/06/13/roam-from-chrome/</link>
-        <guid isPermaLink="true">https://pajamaw.github.io/2020/06/13/roam-from-chrome/</guid>
+        <link>http://localhost:4000/2020/06/13/roam-from-chrome/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/06/13/roam-from-chrome/</guid>
         
         
       </item>
@@ -33,8 +33,8 @@
         <title>Filling in the Blanks: Big O Notation</title>
         <description></description>
         <pubDate>Wed, 21 Sep 2016 13:18:35 -0400</pubDate>
-        <link>https://pajamaw.github.io/2016/09/21/filling-in-the-blanks-big-o-notation/</link>
-        <guid isPermaLink="true">https://pajamaw.github.io/2016/09/21/filling-in-the-blanks-big-o-notation/</guid>
+        <link>http://localhost:4000/2016/09/21/filling-in-the-blanks-big-o-notation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/21/filling-in-the-blanks-big-o-notation/</guid>
         
         
       </item>
@@ -43,8 +43,8 @@
         <title>The -end that matters: The End-User</title>
         <description></description>
         <pubDate>Thu, 15 Sep 2016 13:42:37 -0400</pubDate>
-        <link>https://pajamaw.github.io/2016/09/15/the-end-that-matters-the-end-user/</link>
-        <guid isPermaLink="true">https://pajamaw.github.io/2016/09/15/the-end-that-matters-the-end-user/</guid>
+        <link>http://localhost:4000/2016/09/15/the-end-that-matters-the-end-user/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/15/the-end-that-matters-the-end-user/</guid>
         
         
       </item>

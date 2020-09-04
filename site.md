@@ -36,13 +36,13 @@ I felt for a long time this meant one had to retain this knowledge without help.
 
 - Setup Wikipedia hover-overs on terms and topics
 
-### Inspiration
+#### Inspirations for this humble start to a blog and PKB
 
 [Alfred My Mind](https://github.com/nikitavoloboev/alfred-my-mind)
 
 [Trillium](https://github.com/zadam/trilium)
 
-Mr Owl
+[Mr. Owl]()
 
 [Memex](https://github.com/WorldBrain/memex)
 
