@@ -2,14 +2,15 @@
 layout: default_no_footer
 ---
 
-# Current Big Goals
+# Ongoing Projects
 
 1. Finish personal knowledge base transition
 1. Use Memex Once a day and review it monthly for two months
-1. Use and Add cards to Anki
+1. Use Anki once a day and continue porting notes to cards
 1. Update Goal Collection and Portrayal system
+1. Aggregate fitbit data into dashboard
 
-## Pandemic Projects
+## Pandemic Plans
 
 1. ~~Get site back up and running~~
 1. ~~Finish the Yale Happiness Course~~
