@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+# Helper for pajamaw.github.io
+#
+#   bin/post new "Title"        create _posts/YYYY-MM-DD-title.md and print its path
+#   bin/post draft "Title"      create _drafts/title.md (not published until promoted)
+#   bin/post promote <draft>    move a draft into _posts with today's date
+#   bin/post list               show recent posts and any drafts
+#   bin/post serve              preview locally at http://localhost:4000 (needs jekyll)
+#   bin/post publish [-m msg]   commit everything and push master (GitHub Pages rebuilds)
+
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+die() { echo "error: $*" >&2; exit 1; }
+
+slugify() {
+  echo "$1" | tr '[:upper:]' '[:lower:]' | sed -E "s/[']//g; s/[^a-z0-9]+/-/g; s/^-+|-+$//g"
+}
+
+front_matter() {
+  local title="${1//\'/\'\'}"
+  cat <<EOF
+---
+layout: post
+title: '$title'
+date: $(date '+%Y-%m-%d %H:%M %z')
+comments: true
+---
+
+EOF
+}
+
+cmd_new() {
+  [[ $# -ge 1 && -n "$1" ]] || die 'usage: bin/post new "Title"'
+  local file="_posts/$(date +%Y-%m-%d)-$(slugify "$1").md"
+  [[ -e "$file" ]] && die "$file already exists"
+  front_matter "$1" > "$file"
+  echo "$ROOT/$file"
+}
+
+cmd_draft() {
+  [[ $# -ge 1 && -n "$1" ]] || die 'usage: bin/post draft "Title"'
+  mkdir -p _drafts
+  local file="_drafts/$(slugify "$1").md"
+  [[ -e "$file" ]] && die "$file already exists"
+  front_matter "$1" > "$file"
+  echo "$ROOT/$file"
+}
+
+cmd_promote() {
+  [[ $# -ge 1 && -f "$1" ]] || die "usage: bin/post promote _drafts/<name>.md"
+  local name dest
+  name="$(basename "$1")"
+  dest="_posts/$(date +%Y-%m-%d)-$name"
+  [[ -e "$dest" ]] && die "$dest already exists"
+  sed -E "s/^date: .*/date: $(date '+%Y-%m-%d %H:%M %z')/" "$1" > "$dest"
+  rm "$1"
+  echo "$ROOT/$dest"
+}
+
+cmd_list() {
+  echo "Posts:"; ls -1r _posts | head -10 | sed 's/^/  /'
+  if compgen -G "_drafts/*" > /dev/null; then
+    echo "Drafts:"; ls -1 _drafts | sed 's/^/  /'
+  fi
+}
+
+cmd_serve() {
+  command -v jekyll > /dev/null || die "jekyll not found. Install it with: gem install jekyll kramdown-parser-gfm webrick"
+  exec jekyll serve --drafts --livereload
+}
+
+cmd_publish() {
+  local msg=""
+  if [[ "${1:-}" == "-m" ]]; then msg="${2:-}"; fi
+  [[ "$(git branch --show-current)" == "master" ]] || die "not on master"
+  git add -A
+  git diff --cached --quiet && { echo "Nothing to publish."; return; }
+  if [[ -z "$msg" ]]; then
+    local added
+    added="$(git diff --cached --name-only --diff-filter=A -- _posts)"
+    if [[ $(echo "$added" | grep -c .) -eq 1 ]]; then
+      msg="New post: $(sed -nE "s/^title: *['\"]?(.*[^'\"])['\"]? *$/\1/p" "$added" | head -1 | sed "s/''/'/g")"
+    else
+      msg="Site update $(date +%Y-%m-%d)"
+    fi
+  fi
+  git status --short
+  git commit -q -m "$msg"
+  git push -q origin master
+  echo "Published: $msg"
+  echo "Live in ~1 minute at https://pajamaw.github.io"
+}
+
+case "${1:-}" in
+  new|draft|promote|list|serve|publish) c="$1"; shift; "cmd_$c" "$@" ;;
+  *) sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//'; exit 1 ;;
+esac

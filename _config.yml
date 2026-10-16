@@ -52,3 +52,11 @@ address:
 
 markdown: kramdown
 permalink: pretty
+
+# Keep repo tooling out of the published site
+exclude:
+  - bin
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
