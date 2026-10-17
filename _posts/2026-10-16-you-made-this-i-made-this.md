@@ -31,7 +31,7 @@ Physical component projects are also extremely satisfying. I think I'm probably 
 
 Cuz software projects are forever different.
 
-I'm sure others realized this about me. My list of project ideas is too long; and the list of those I've started is a fraction of that; the ones I've made meaningful progress on even fewer; and the number that I've ‘completed’? lol
+I'm sure others realized this about me. My list of project ideas is too long; and the list of those i've started is a fraction of that; the ones I've made meaningful progress on even fewer; and the number that I've ‘completed’? lol
 
 Idk - It just doesn't feel satisfying. I can point claude at my projects folder, at any within it. And it executes it very well. All these old software ideas; done. Just like that.
 
